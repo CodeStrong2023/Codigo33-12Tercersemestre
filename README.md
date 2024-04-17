@@ -26,6 +26,17 @@ _A continuación encontrara los link a cada carpeta:_
 
 _Una vez finalizado el código, el tester previamente establecido se encargara de verificar que cumple con los estándares establecidos. Una vez ya verificado el mismo sera el encargado de subir los cambios necesarios a la rama Master._
 
+## 📅 Organizacion Semanal
+
+|  SEMANA  | SCRUM MASTER |
+| ------------- | ------------- |
+| Semana 1  | Jessica Pagano  |
+| Semana 2  | Belen Arriola  |
+| Semana 3  | Sofia Lopez |
+| Semana 4  | Ezequiel Flores  |
+| Semana 5  | Aldana Ravalle  |
+| Semana 6  | Simon Carabajal |
+| Semana 7  | Gianella Achetoni  |
 ## Autores ✒️
 
 
