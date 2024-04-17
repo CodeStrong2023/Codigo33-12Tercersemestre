@@ -19,8 +19,8 @@ _A continuación encontrara los link a cada carpeta:_
 ## Construido con 🛠️
 
 * VScode
-* 
-* 
+* NetBeans
+* PyCharm
 
  ## Tester ⚙️
 
