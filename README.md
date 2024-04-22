@@ -1,5 +1,5 @@
-<span>![</span><span>Logo 33-12</span><span>]</span>
-<span>(</span><span>https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)</span>
+![LOGO 33-12]([https://github.com/Gianella-A-Achetoni/Gianella-A-Achetoni/assets/135769239/f426aa25-f2eb-410d-a3cb-3ab2e7fd326a](https://github.com/CodeStrong2023/Codigo33-12Tercersemestre/blob/f01878a37996e24b57310493d00e708b8251ff62/Codigo33-12.png))
+
 
 # Tercer Semestre de la tecnicatura
 
