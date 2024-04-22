@@ -1,3 +1,6 @@
+<span>![</span><span>Logo 33-12</span><span>]</span>
+<span>(</span><span>https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)</span>
+
 # Tercer Semestre de la tecnicatura
 
 _En este repositorio podra encontar el trabajo realizado por el grupo CODIGO 33-12_
