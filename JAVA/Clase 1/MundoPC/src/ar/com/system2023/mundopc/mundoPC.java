@@ -20,7 +20,7 @@ public class mundoPC {
         orden1.mostrarOrden();
         
         Computadora computadorasVarias = new Computadora("Computadora de diferentes marcas");
-        orden2.agregarComputadora(computadorasVariass);
+        orden2.agregarComputadora(computadorasVarias);
         
         orden1.mostrarOrden();
         orden2.mostrarOrden();
