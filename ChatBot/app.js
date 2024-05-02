@@ -2,7 +2,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const clave = require("./Clave.JS");
 
-document.getElementById("botonGuardar").addEventListener("click", function() {
+document.getElementById("send-button").addEventListener("click", function() {
     var textoIngresado = document.getElementById("textoEntrada").value;
     // Acá se guarda el texto
 });
@@ -23,11 +23,11 @@ async function run() {
       history: [
         {
           role: "user",
-          parts: [{ text: "Hola" }],//Cambiar esto por una entrada de texto
+          parts: [{ text: "Hola" }],
         },
         {
           role: "model",
-          parts: [{ text: "Bienvenido, cuentame ¿Cómo te sientes? " }],//Poner algo acorde
+          parts: [{ text: "Bienvenido, cuentame ¿Cómo te sientes? " }],
         },
       ],
       generationConfig: {
