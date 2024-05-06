@@ -5,7 +5,7 @@ const clave = require("./Clave.JS");
 document.getElementById("send-button").addEventListener("click", function() {
     var textoIngresado = document.getElementById("textoEntrada").value;
     // Acá se guarda el texto
-});
+});// esto lo voy a mover a otro archivo
 
 // Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI(clave); //Aca le paso la clave Api key
