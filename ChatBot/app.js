@@ -2,10 +2,10 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const clave = require("./Clave.JS");
 
-document.getElementById("botonGuardar").addEventListener("click", function() {
+document.getElementById("send-button").addEventListener("click", function() {
     var textoIngresado = document.getElementById("textoEntrada").value;
     // Acá se guarda el texto
-});
+});// esto lo voy a mover a otro archivo
 
 // Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI(clave); //Aca le paso la clave Api key
@@ -23,11 +23,11 @@ async function run() {
       history: [
         {
           role: "user",
-          parts: [{ text: "Hola" }],//Cambiar esto por una entrada de texto
+          parts: [{ text: "Hola" }],
         },
         {
           role: "model",
-          parts: [{ text: "Bienvenido, cuentame ¿Cómo te sientes? " }],//Poner algo acorde
+          parts: [{ text: "Bienvenido, cuentame ¿Cómo te sientes? " }],
         },
       ],
       generationConfig: {
