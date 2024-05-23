@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EmpatIA - tu Chatbot de Asistencia Emocional</title>
+    <link rel="icon" type="image/png" href="Imagenes/png (1).png">
+    
+    <!-- Enlace a CSS -->
+    <link rel="stylesheet" href="Empatia.css">
+
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- Contenedor izquierdo -->
+        <div class="left-container">
+            <img src="Imagenes/empatiaFace.png" alt="Imagen de empatía">
+        </div>
+
+        <!-- Contenedor derecho -->
+        <div class="right-container">
+
+            <!-- Ventana de chat -->
+            <div id="chat">
+
+                <!-- Cabecera del chatbot -->
+                <!-- Área de mensajes -->
+                <div id="message-area">
+
+                    <!-- Mensajes del chat -->
+                    <div class="message user-message">
+                        
+                        <!-- Mensaje del usuario -->
+                        <div class="message-content">
+                            <p>Hola EmpatIA, este es un texto de prueba</p>
+                        </div>
+                    </div>
+                    
+                    <div class="message bot-message">
+
+                        <!-- Respuesta del chatbot -->
+                        <div class="message-content">
+                            <p>Hola soy EmpatIA. Este tambien es un mensaje de prueba</p>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <!-- Área de entrada de texto -->
+                <div id="input-area">
+                    <input type="text" id="textoEntrada" placeholder="Escribe aquí...">
+                    <button id="send-button">Enviar</button>
+                </div>
+            </div>
+
+            <!-- Script para la funcionalidad del chatbot -->
+            <script src="./funcion.js"></script><!--Enlace a JS -->
+
+        </div>
+    </div>
+</body>
+
+</html>
