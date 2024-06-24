@@ -30,6 +30,8 @@ def main():
         else:
             print("Opción no válida.")
 
+        mascota.tiempo_pasa()      #Funcion donde pasa el tiempo
+
 #SE CREA CLASE - STATS EN CERO(INICIALIZACION EN CERO) - - ¿AGREGAR ALGO MAS?
 
 class Tamagotchi:
@@ -54,6 +56,24 @@ class Tamagotchi:
 #HASTA AQUI REALICE FUNCIONES DE MENU - ELECCION DE USUARIO
 # STATS - Y FUNCION ALIMENTAR - (JESSICA PAGANO)
 
+
+#Funcion para jugar con la mascota - Ezequiel Flores
+    def jugar(self):
+        if self.aburrimiento > 0:
+            self.aburrimiento -= 1
+            print(f"Jugaste con {self.nombre}. Aburrimiento: {self.aburrimiento}")
+        else:
+            print(f"{self.nombre} no está aburrido.")
+
+#Funcion Donde trasncurre el tiempo (Va sumando stats en 1 en 1) - Ezequiel Flores
+    def tiempo_pasa(self):
+        self.hambre += 1
+        self.aburrimiento += 1
+        self.sueno += 1
+        print(f"El tiempo pasa... Hambre: {self.hambre}, Aburrimiento: {self.aburrimiento}, Sueño: {self.sueno}")
+
 #FUNCION QUE SE DEVUELVE AL MENU -
 if __name__ == "__main__":
     main()
+
+
