@@ -196,6 +196,17 @@ class Tamagotchi:
             print(f"Jugaste con {self.nombre}. Aburrimiento: {self.aburrimiento}")
         else:
             print(f"{self.nombre} no está aburrido.")
+            
+#Funcion Para que la mascota Duerma - Simon Carabajal
+    def dormir(self):
+        # Verificamos si el Tamagotchi está cansado
+        if self.cansancio > 0:
+            # Reducimos el cansancio en 1
+            self.cansancio -= 1
+            print(f"{self.nombre} ha dormido. Cansancio: {self.cansancio}")
+        else:
+            # Si no está cansado, informamos al usuario
+            print(f"{self.nombre} no está cansado.")
 
 #Funcion Donde trasncurre el tiempo (Va sumando stats en 1 en 1) - Ezequiel Flores
     def tiempo_pasa(self):
