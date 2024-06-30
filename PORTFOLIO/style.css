@@ -1,0 +1,10 @@
+header{
+    background-color: yellow;
+    img{
+        width:100px ;
+    }
+}
+footer{
+    background-color: chocolate;
+    text-align: center;
+}
