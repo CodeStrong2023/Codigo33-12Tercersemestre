@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FF829A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #FFA6B2;
+    width: 95%;
+    height: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left-container img {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.right-container {
+    flex: 100%;
+    border: 5px solid #FF829A;
+    background-color: #FDCC42;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+
+}
+
+
+/* Estilos para el chatbot */
+
+#chat {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#message-area {
+    max-height: 60%;
+    overflow-y: auto;
+    color: #860A4D;
+
+}
+
+#input-area {
+    margin-top: 20px;
+    display: flex;
+
+}
+
+#textoEntrada {
+    flex: 1;
+    padding: 10px;
+    border: 5px solid #FEE760;
+    color: #860A4D;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #FEE760;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #FF829A;
+    border: none;
+    border-radius: 50px;
+    color: #860A4D;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #FEE760;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    100% {
+        transform: scale(1.05); /* Tamaño aumentado */
+    }
+}
+
+/* Estilos para los globos de diálogo */
+
+.message {
+    margin-bottom: 10px;
+    clear: both;
+    overflow: auto;
+}
+
+.user-message {
+    float: left;
+    background-color: #FF829A;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.bot-message {
+    float: right;
+    background-color: #FEE760;
+    padding: 10px;
+    border-radius: 25px;
+}

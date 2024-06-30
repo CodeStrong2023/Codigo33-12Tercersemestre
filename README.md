@@ -1,3 +1,8 @@
+<h1 align="center">CÓDIGO 33-12</h1>
+
+![LOGO 33-12](https://github.com/CodeStrong2023/Codigo33-12Tercersemestre/blob/f01878a37996e24b57310493d00e708b8251ff62/Codigo33-12.png)
+
+
 # Tercer Semestre de la tecnicatura
 
 _En este repositorio podra encontar el trabajo realizado por el grupo CODIGO 33-12_
@@ -34,15 +39,13 @@ _Una vez finalizado el código, el tester previamente establecido se encargara d
 | Semana 2  | Belen Arriola  |
 | Semana 3  | Sofia Lopez |
 | Semana 4  | Ezequiel Flores  |
-| Semana 5  | Aldana Ravalle  |
-| Semana 6  | Simon Carabajal |
-| Semana 7  | Gianella Achetoni  |
+| Semana 5  | Simon Carabajal |
+| Semana 6  | Gianella Achetoni  |
 ## Autores ✒️
 
 
 * **Gianella Ariadna Achetoni** - *Rol* - [Gianella-A-Achetoni](https://github.com/Gianella-A-Achetoni)
 * **Ezequiel Andres Flores** - *Rol* - [EzeFlores](https://github.com/EzeFlores1988)
-* **Aldana Veronica Ravalle** - *Rol* - [Ravalle-Aldana](https://github.com/Ravalle-Aldana)
 * **Jessica Pagano** - *Rol* - [JessicaPagano](https://github.com/JessicaPagano)
 * **Sofía Belén López** - *Rol* - [Soofbb](https://github.com/Soofbb)
 * **Simón Tomás Carabajal** - *Rol* - [SimonCarabajal](https://github.com/SimonCarabajal)
