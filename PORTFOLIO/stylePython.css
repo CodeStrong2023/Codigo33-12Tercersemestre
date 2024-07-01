@@ -20,12 +20,11 @@ header{
     }
 }
 body{
-    margin: 0%;
     background-color:rgb(227, 246, 255);
+    margin: 0%;
     text-align: center;
 }
 footer{
-    width: 100%;
     background-color:rgb(141, 203, 230);
     text-align: center;
 }
