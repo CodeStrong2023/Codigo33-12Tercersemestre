@@ -3,7 +3,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: yellow;
+    background-color:rgb(96, 114, 116);
     img{
         width:100px ;
     }
@@ -13,6 +13,11 @@ header{
         flex-direction: row;
         a{
             text-decoration: none;
+            color: white;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 150%;
         }
         li{
             margin: 10px;
@@ -20,11 +25,23 @@ header{
     }
 }
 body{
-    background-color:rgb(227, 246, 255);
+    background-color:rgb(250, 238, 209);
     margin: 0%;
     text-align: center;
-}
-footer{
-    background-color:rgb(141, 203, 230);
-    text-align: center;
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    h2{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+        font-size: 250%;
+    }
+    footer{
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
 }
