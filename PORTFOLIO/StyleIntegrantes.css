@@ -1,0 +1,175 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(96, 114, 116);
+    img{
+        width:100px ;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 150%;
+        }
+        li{
+            margin: 10px;
+        }
+    }
+}
+body{
+    background-color:rgb(250, 238, 209);
+    margin: 0%;
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    .contenidoGeneral{
+        margin: 30px;
+        h1{
+            text-align: center;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 400%;
+              
+        }
+        p{
+            font-family: "Assistant", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+    
+}
+.ContenedorMadre{
+    margin: 15px;
+    .contenedoresParticulares{
+        .contenedorImpar{
+            width: 100%;
+            background-color:rgb(222, 208, 182);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #B2A59B;
+            text-align: center;
+            h2{
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 400;
+                font-style: normal; 
+                font-size: 250%;
+            }
+            .rocio{
+                img{
+                    width: 300px;
+                    height: 250px;
+                }
+            }
+            .contenido{
+                width: 100%;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                img{
+                    border-radius: 15px;
+                    width: 200px;
+                    margin: 10px;
+                }
+                .texto{
+                    margin-left: 20px;
+                    margin-right: 50px;
+                    p{
+                        text-align: justify;
+                        font-family: "Assistant", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                    a{
+                        img{
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                    ul{
+                        text-align: justify;
+                        font-family: "Assistant", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+        .contenedorPar{
+            width: 100%;
+            text-align: center;
+            h2{
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 400;
+                font-style: normal; 
+                font-size: 250%;
+            }
+            .eze{
+                img{
+                    width: 300px;
+                    height: 250px;
+                }
+            }
+            .contenido{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                }
+                img{
+                    border-radius: 15px;
+                    width: 200px;
+                    margin: 10px;
+                }
+                .texto{
+                    margin-left: 20px;
+                    margin-right: 50px;
+                    p{
+                        text-align: justify;
+                        font-family: "Assistant", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                    a{
+                        img{
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                    ul{
+                        text-align: justify;
+                        font-family: "Assistant", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+footer{
+    background-color:rgb(178, 165, 155);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+}

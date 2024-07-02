@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(96, 114, 116);
+    img{
+        width:100px ;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 150%;
+        }
+        li{
+            margin: 10px;
+        }
+    }
+}
+body{
+    margin: 0%;
+    background-color:rgb(250, 238, 209);
+    text-align: center;
+    h1{
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 400%;          
+    }
+    h2{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+        font-size: 250%;
+    }
+    h3{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+        font-size: 200%;
+    }
+    p{
+        font-family: "Assistant", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+footer{
+    width: 100%;
+    text-align: center;
+}
