@@ -64,6 +64,12 @@ body{
                 font-style: normal; 
                 font-size: 250%;
             }
+            .rocio{
+                img{
+                    width: 300px;
+                    height: 250px;
+                }
+            }
             .contenido{
                 width: 100%;
                 margin-left: 10px;
