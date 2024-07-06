@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpyBot - Live chat with emotional AI</title>
+    <link rel="icon" type="image/png" href="Imagenes/EMPY (1).png">
+    <!-- Enlace a CSS -->
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Contenedor izquierdo -->
+        <div class="left-container">
+            <img src="Imagenes/EMPY (1).png" alt="AI image">
+        </div>
+        <!-- Contenedor derecho -->
+        <div class="right-container">
+
+            <!-- Ventana de chat -->
+            <div id="chat">
+
+                <!-- Cabecera del chatbot -->
+                <!-- Área de mensajes -->
+                <div id="message-area"></div>
+
+                <!-- Área de entrada de texto-->
+                <div id="input-area">
+                    <input type="text" id="textoEntrada" placeholder="Escribe aquí...">
+                    <button id="send-button">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para la funcionalidad del chatbot -->
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+
+    <!-- Script principal para manejar el chatbot -->
+    <script type="module">
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+
+        // Clave 
+        const API_KEY = "AIzaSyBJJozsxUhisQOVSGdkG1DorxOpEi_GIc0";
+        
+        // Inicializar IA
+        const genAI = new GoogleGenerativeAI(API_KEY);
+        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+
+        document.getElementById("send-button").addEventListener("click", async function() {
+            let input = document.getElementById('textoEntrada');
+            let message = input.value;
+            if (message.trim() !== '') {
+                addMessage('user', message);
+                input.value = '';
+
+                const responseText = await sendMessageToChatbot(message);
+                addMessage('bot', responseText);
+            }
+        });
+
+        //Funcion que genera respuesta de ia
+        async function sendMessageToChatbot(msg) {
+            try {
+                const chat = model.startChat({
+                    history: [
+                        { role: "user",
+                        parts: [{ text: "Hola" }] },
+                        { role: "model",
+                        parts: [{ text: "Bienvenido a EmpyBot, dime en qué puedo ayudarte hoy?" }] },
+                    ],
+                    generationConfig: { maxOutputTokens: 100 },
+                });
+
+                //textoingresado llama a la variable de arriba creada y traida del index
+                const result = await chat.sendMessage(msg);
+                const response = await result.response;
+                return response.text();
+            } catch (error) {
+                console.error('Error al comunicarse con el EmpyBot', error);
+                return 'Lo siento, ha ocurrido un error. Inténtalo de nuevo en unos segundos.';
+            }
+        }
+
+        // Mensajes de ventana del chat
+        function addMessage(sender, text) {
+            let messageArea = document.getElementById('message-area');
+            let messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender + '-message');
+
+            let messageContent = document.createElement('div');
+            messageContent.classList.add('message-content');
+            messageContent.innerHTML = '<p>' + text + '</p>';
+
+            messageDiv.appendChild(messageContent);
+            messageArea.appendChild(messageDiv);
+            messageArea.scrollTop = messageArea.scrollHeight;
+        }
+
+         //Palabras en la que el chat esta alerta 
+         const palabrasClave = ["Me gustaría estar muerto","Desearía no haber nacido","A veces, quisiera desaparecer",
+        "Un día de estos me van a encontrar muerto","Se van a librar de mí","Ya no quiero vivir más","Los demás van a estar mejor sin mí",
+        "La única solución es matarme","Ya no puedo estar con este dolor", "Me quiero morir", "Estoy pensando en suicidarme",
+        "matarme", "suicidarme", "morirme"
+        ];
+    </script>
+</body>
+</html>

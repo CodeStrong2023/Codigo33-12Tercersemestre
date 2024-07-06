@@ -1,15 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FF829A;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('Imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container {
-    background-color: #FFA6B2;
+    background-color: #F2E7D5;
     width: 95%;
     height: 90%;
     padding: 10px;
@@ -26,20 +29,18 @@ body {
     align-items: flex-start;
 }
 
-
 .right-container {
     flex: 100%;
-    border: 5px solid #FF829A;
-    background-color: #FDCC42;
+    border: 6px solid rgba(109, 152, 134, 0.5);
+    background-color: #F7F7F7;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     width: 90%;
     height: 90%;
 
 }
 
-
-/* Estilos para el chatbot */
+/* Estilo del chatbot */
 
 #chat {
     width: 100%;
@@ -56,10 +57,11 @@ body {
 }
 
 #message-area {
-    flex: 1; /* Crece para llenar el espacio disponible */
+    flex: 1; 
     max-height: 60%;
     overflow-y: auto;
-    color: #860A4D;
+    color: #393E46;
+    font-family: 'Optima',
 
 }
 
@@ -72,35 +74,34 @@ body {
 #textoEntrada {
     flex: 1;
     padding: 10px;
-    border: 5px solid #FEE760;
-    color: #860A4D;
+    border: 3px solid #6D9886;
+    color: #393E46;
     border-radius: 50px;
     font-size: 16px;
-    background-color: #FEE760;
+    background-color: #F2E7D5;
 }
 
 #send-button {
     padding: 10px 20px;
-    background-color: #FF829A;
+    background-color: #6D9886;
     border: none;
     border-radius: 50px;
-    color: #860A4D;
+    color: #393E46;
     font-size: 16px;
     cursor: pointer;
     margin-left: 10px;
-    background-color: #FEE760;
+    background-color: #F2E7D5;
 }
 
 @keyframes pulse {
     0% {
-        transform: scale(1); /* Tamaño normal */
+        transform: scale(1); 
     }
     100% {
-        transform: scale(1.05); /* Tamaño aumentado */
+        transform: scale(1.05); 
     }
 }
 
-/* Estilos para los globos de diálogo */
 
 .message {
     margin-bottom: 10px;
@@ -109,15 +110,17 @@ body {
 }
 
 .user-message {
-    float: left;
-    background-color: #FF829A;
+    float: right;
+    background-color: #F2E7D5;
     padding: 10px;
     border-radius: 25px;
+    font-family: 'Optima',
 }
 
 .bot-message {
-    float: right;
-    background-color: #FEE760;
+    float: left;
+    background-color: #F2E7D5;
     padding: 10px;
     border-radius: 25px;
+    font-family: 'Optima',
 }
