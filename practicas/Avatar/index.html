@@ -3,13 +3,88 @@
     <head>
         <meta charset="utf-8" />
         <title>LA LEYENDA DE AANG: AVATAR</title>
+        <script src="./app1.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200..800&family=Bebas+Neue&family=Bungee+Tint&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
      </head>
     <body>
-        <h1>AVATAR 🔥💧🌱🌪️</h1> <!--Esto es estatico, NO cambia, el h1 se utiliza una vez-->
+        <h1>AVATAR</h1> <!--Esto es estatico, NO cambia, el h1 se utiliza una vez-->
+        <section id="inicio">
+            <button id="boton-reglas">Reglas del Juego</button>
+        </section>
 
+        <section id="reglas-del-juego">
+            <h4>REGLAS DEL JUEGO</h4>
+            <ol>
+                <li><strong>Selección de Personajes:</strong>
+                    <ul>
+                        <li>El jugador elige uno de los cuatro personajes: Zuko, Katara, Aang, o Toph.</li>
+       
+                        <li>El enemigo es asignado aleatoriamente de entre estos personajes.</li>
+       
+                    </ul>
+                </li>
+                <li><strong>Ataques:</strong>
+                    <ul>
+                        <li>El jugador elige entre tres ataques: Puño, Patada, y Barrida.</li>
+       
+                        <li>El enemigo elige su ataque aleatoriamente.</li>
+       
+                    </ul>
+                </li>
+                <li><strong>Reglas del Combate:</strong>
+                    <ul>
+       
+                        <li><strong>Empate:</strong> Si ambos eligen el mismo ataque.</li>
+       
+                        <li><strong>Victoria del Jugador:</strong>
+                            <ul>
+       
+                                <li>Puño ✊ vence a Barrida 👣.</li>
+       
+                                <li>Patada 🦶 vence a Puño ✊.</li>
+       
+                                <li>Barrida 👣 vence a Patada 🦶.</li>
+       
+                            </ul>
+                        </li>
+                        <li><strong>Derrota del Jugador:</strong> Cualquier otra combinación.</li>
+                    </ul>
+                </li>
+                <li><strong>Vidas:</strong>
+                    <ul>
+                        <li>Ambos comienzan con 3 vidas.</li>
+       
+                        <li>Perder un combate disminuye una vida.</li>
+       
+                    </ul>
+                </li>
+                <li><strong>Fin del Juego:</strong>
+                    <ul>
+       
+                        <li><strong>Victoria del Jugador:</strong> Enemigo pierde todas sus vidas.</li>
+       
+                        <li><strong>Derrota del Jugador:</strong> Jugador pierde todas sus vidas.</li>
+       
+                        <li>Se deshabilitan los botones de ataque y se muestra un botón para reiniciar el juego.</li>
+                    </ul>
+                </li>
+                <li><strong>Reinicio del Juego:</strong>
+                    <ul>
+       
+                        <li>El jugador puede reiniciar el juego, recargando la página.</li>
+       
+                    </ul>
+                </li>
+            </ol>
+            <button id="boton-jugar">Jugar</button>
+        </section>
+       
         <section id="seleccionar-personaje">
             <h2>Elige tu Personaje</h2>
-            
+
             <label for="zuko">Zuko</label> <!--Esta etiqueta es para darle un indicador a los usuarios de que están seleccionando-->
             <input type="radio" name="personaje" id="zuko"/> <!-- name es para agrupar todos los imputs y poder seleccionar-->
 
@@ -25,25 +100,22 @@
             <button id="boton-personaje">Seleccionar</button> <!-- El botón para seleccionar el personaje-->
         </section>
 
-        <!--Ataque -->
         <section id="seleccionar-ataque">
             <h2>Elige tu ataque</h2> <!--Se puede utilizar varias veces-->
-            <p>Tu personaje tiene <span>3</span> vidas</p> <!--Pero esto debe ser dinamico, necesitamos que cambie-->
-            <p>Los personajes del enemigo tienen <span>3</span> vidas</p> <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
+            <p>Tu personaje <span id="personaje-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p> <!--Pero esto debe ser dinamico, necesitamos que cambie-->
+            <p>El personaje <span id="personaje-enemigo"></span> del enemigo tienen <span id="vidas-enemigo">3</span> vidas</p> <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
             <p>
-                <button id="boton-Punio">Punio</button>
-                <button id="boton-Patada">Patada</button>
-                <button id="boton-Barrida">Barrida</button>
+                <button id="boton-punio">Punio ✊</button>
+                <button id="boton-patada">Patada 🦶</button>
+                <button id="boton-barrida">Barrida 👣</button>
             </p>
         </section>
 
         <section id="mensajes"> <!--Será un párrafo dinamico-->
-            <p>Tu personaje atacó con todo el poder del FUEGO, el personaje del enemigo atacó con el medio poder de la TIERRA - GANASTE 🎉</p>
         </section>
 
         <section id="reiniciar">
             <button id="boton-reiniciar">Reiniciar</button>
         </section>
-        <script src="./app1.js"></script>
     </body>
 </html>

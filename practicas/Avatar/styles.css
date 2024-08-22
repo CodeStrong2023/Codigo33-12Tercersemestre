@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    color: white;
+    background-color: #6c6c6c;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 10px;
+    ol{
+        text-align: justify;
+        list-style: none;
+        li{
+            list-style: none;
+            lu{
+                list-style: none;
+            }
+        }
+    }
+    h1{
+        font-family: "Bungee Tint", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 60px;
+    }
+    h4, h2{
+        font-family: "Rubik Mono One", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+    button{
+        color: rgb(77, 2, 2);
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, #d1405b 100%);
+    }
+}
